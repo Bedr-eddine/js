@@ -1,0 +1,1 @@
+const Constante = "Je suis une constante";
