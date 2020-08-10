@@ -19,5 +19,3 @@ function printFilm(nmbr) {
             console.log("Je ne connais pas")
     }
 }
-printFilm(3);
-printFilm(5);
