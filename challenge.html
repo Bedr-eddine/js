@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge JS</title>
+    <style>
+        ul li {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Task List</h1>
+    <ul id="liste">
+
+    </ul>
+    <form action="#">
+        <input id="tache" type="text" placeholder="Tapez la tache ici...">
+        <input onclick="taper()" type="submit" value="Entrer">
+    </form>
+    <script>
+        function taper() {
+
+            var tache = document.getElementById("tache").value;
+            if (tache == "") {
+                alert("veuillez entrer une tache");
+            }
+
+            var newTache = document.createTextNode(tache);
+            var newLi = document.createElement("li").appendChild(newTache);
+
+            document.getElementById("liste").appendChild(newLi)
+            document.getElementById("tache").value = "";
+        }
+        var button = document.getElementById("entrer");
+    </script>
+</body>
+
+</html>

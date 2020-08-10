@@ -7,9 +7,11 @@ function spupof(chaine) {
             if (chaine[i] == alphabet[j]) {
 
                 if (chaine[i] == "z") {
+
                     table.push("a");
                 } else {
-                    table.push(alphabet[j + 1]);
+
+                    table.push(alphabet[j + 1])
                 }
 
 
@@ -18,6 +20,7 @@ function spupof(chaine) {
         }
 
     }
+
     console.log(table.join(""));
 }
-spupof("AAA");
+spupof("azer G");
