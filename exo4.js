@@ -11,6 +11,3 @@ function printUntil(max) {
         }
     }
 }
-
-printUntil(-3);
-printUntil(5);
